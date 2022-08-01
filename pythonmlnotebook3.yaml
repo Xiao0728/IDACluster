@@ -22,12 +22,12 @@ spec:
         image: 'jxcodetw/jupyter-pytorch'
         resources:
           requests:
-            cpu: '2'
-            memory: "200Gi"
+            cpu: '1'
+            memory: "20Gi"
             nvidia.com/gpu: 1
           limits:
-            cpu: "2"
-            memory: "140Gi"
+            cpu: "1"
+            memory: "20Gi"
             nvidia.com/gpu: 1
         command:
           - 'jupyter'
