@@ -5,6 +5,7 @@
 ## avaliable image 
 - jxcodetw/jupyter-pytorch
 - inferislux/zaiqiao-ml:latest
+- macavaney/idabox:v14
 
 ## avaliable nodeselctor:
 Three types of node are avaliable:
