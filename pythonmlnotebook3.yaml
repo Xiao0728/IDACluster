@@ -19,7 +19,7 @@ spec:
         # node-role.ida/gpu2080ti: "true"
       containers:
       - name: deepo-ml-plus
-        image: 'jxcodetw/jupyter-pytorch'
+        image: 'macavaney/idabox:v14'
         resources:
           requests:
             cpu: '1'
