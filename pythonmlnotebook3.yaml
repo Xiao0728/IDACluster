@@ -19,15 +19,15 @@ spec:
         # node-role.ida/gpu2080ti: "true"
       containers:
       - name: deepo-ml-plus
-        image: 'macavaney/idabox:v14'
+        image: '9meo/pytorch1.10-transformers4.2:v3'
         resources:
           requests:
             cpu: '1'
-            memory: "20Gi"
+            memory: "50Gi"
             nvidia.com/gpu: 1
           limits:
             cpu: "1"
-            memory: "20Gi"
+            memory: "50Gi"
             nvidia.com/gpu: 1
         command:
           - 'jupyter'
