@@ -69,6 +69,10 @@ spec:
               mountPath: /nfs/xiao/
             - name: craigm
               mountPath: /nfs/craigm/
+            - name: nicola
+              mountPath: /nfs/nicola/
+            - name: sean
+              mountPath: /nfs/sean/
           terminationMessagePolicy: File
           image: jxcodetw/jupyter-pytorch
           args:
@@ -89,5 +93,11 @@ spec:
         - name: craigm
           persistentVolumeClaim:
             claimName: craigmvol1claim
+        - name: nicola
+          persistentVolumeClaim:
+            claimName: nicolavol1xiaoclaim
+        - name: sean
+          persistentVolumeClaim:
+            claimName: xiaotrecdlvol2claim
       dnsPolicy: ClusterFirst
 
